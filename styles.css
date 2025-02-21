@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +7,8 @@
 
 body {
     font-family: Arial, Sans-serif;
-    padding-top: 80px; /* Prevent content from being hidden under navbar */
     background-color: #021021;
+    padding-top: 80px; /* Prevent content from being hidden under navbar */
 }
 
 /* Navbar Styles */
@@ -16,10 +17,10 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: #002B5B;
-    padding: 10px 40px; /* Slightly reduced padding for a thinner navbar */
+    padding: 10px 40px;
     position: fixed;
     width: 100%;
-    height: 65px; /* Reduced height */
+    height: 65px;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -47,6 +48,12 @@ body {
     display: flex;
     list-style: none;
     gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li {
+    list-style: none;
 }
 
 .nav-items a {
@@ -60,12 +67,45 @@ body {
     color: #FFC107;
 }
 
-/* Mobile Menu */
+/* Mobile Navbar */
 .menu-toggle {
     display: none;
     font-size: 30px;
     color: white;
     cursor: pointer;
+}
+
+/* Mobile Menu Styling */
+@media (max-width: 992px) {
+    .nav-items ul {
+        display: none; /* Hide by default */
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #002B5B;
+        padding: 10px 0;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .nav-items ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-items li {
+        padding: 10px 10px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Hero Section */
@@ -85,7 +125,6 @@ body {
     padding: 20px;
 }
 
-/* Background overlay applied only to the hero section */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -95,20 +134,11 @@ body {
     background-color: rgba(3, 1, 15, 0.75);
 }
 
-/* Content is placed above the overlay */
 .hero-content {
     position: relative;
     z-index: 2;
     max-width: 800px;
     text-align: center;
-}
-
-.hero img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
 }
 
 .hero h1 {
@@ -125,33 +155,27 @@ body {
 #serviceCarousel {
     width: 75%;
     height: auto;
-  }
-  .service-card {
-    width: 500px;
+}
+
+.service-card {
+    width: 90%;
+    max-width: 500px;
     transition: all 0.3s ease-in-out;
     cursor: pointer;
-  }
-  .card-img-top {
+}
+
+.card-img-top {
     width: 100%;
     height: 500px;
     object-fit: cover;
-  }
-  .contact-image {
-    object-fit: cover;
-  }
-  h2.text-center {
-    color: rgba(255, 255, 255, 1); /* Full white */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    font-weight: bold;
 }
 
 /* About Section */
 .about-section {
     padding: 60px 20px;
-    background-color: #111;
+    background-color: #021021;
     color: white;
     text-align: center;
-    background-color: #021021;
 }
 
 .about-content {
@@ -185,34 +209,12 @@ body {
     margin-bottom: 15px;
 }
 
-.btn-primary {
-    background-color: #f0ede4;
-    color: #111;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.btn-primary:hover {
-    background-color: #e6a700;
-}
 /* Contact Section */
 .contact-section {
     padding: 60px 20px;
     background-color: #021021;
     color: white;
     text-align: center;
-}
-
-.contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 40px;
-    max-width: 800px;
-    margin: auto;
 }
 
 .contact-form {
@@ -234,11 +236,6 @@ body {
     border-radius: 5px;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-    color: #ccc;
-}
-
 .contact-form button {
     background-color: #f0ede4;
     color: #111;
@@ -253,45 +250,12 @@ body {
     background-color: #e6a700;
 }
 
-.contact-details {
-    text-align: left;
-}
-
-.contact-details p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.contact-details a {
-    color: #eeb10b;
-    text-decoration: none;
-}
-
-.contact-details a:hover {
-    text-decoration: underline;
-}
-
-.contact-social {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
-}
-
-.contact-social a {
-    font-size: 20px;
-    color: white;
-    transition: color 0.3s;
-}
-
-.contact-social a:hover {
-    color: #FFC107;
-}
 /* Footer Section */
 .footer {
     background-color: #002B5B;
     color: white;
     text-align: center;
-    padding: 10px 0; /* Minimal padding */
+    padding: 10px 0;
 }
 
 .footer-bottom p {
@@ -300,36 +264,8 @@ body {
     margin: 0;
 }
 
-/* Responsive Design */
+/* Mobile Adjustments */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px;
-    }
-
-    .nav-items ul {
-        display: none; /* Hide regular menu */
-        flex-direction: column;
-        width: 100%;
-        background: #002B5B;
-        position: absolute;
-        top: 65px;
-        left: 0;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .nav-items ul.active {
-        display: flex;
-    }
-
-    .nav-items li {
-        padding: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
     .hero img {
         width: 200px;
         height: 200px;
@@ -342,20 +278,37 @@ body {
     .hero h4 {
         font-size: 16px;
     }
-}
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
+
     .services-carousel {
         flex-direction: column;
         align-items: center;
         max-width: 90%;
     }
 
-    .carousel-btn {
-        display: block;
-    }
-
     .service-card {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .hero h1 {
+        font-size: 20px;
+    }
+
+    .hero h4 {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 15px 5px;
+    }
+
+    .footer-bottom p {
+        font-size: 10px;
     }
 }
