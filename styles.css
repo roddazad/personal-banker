@@ -7,7 +7,7 @@
 body {
     font-family: Arial, Sans-serif;
     padding-top: 80px; /* Prevent content from being hidden under navbar */
-    background-color: rgb(9, 9, 17);
+    background-color: #021021;
 }
 
 /* Navbar Styles */
@@ -121,75 +121,6 @@ body {
     font-weight: normal;
 }
 
-/* Section Title */
-.section-title {
-    text-align: center;
-    font-size: 28px;
-    color: #FFC107;
-    margin-bottom: 20px;
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .services-carousel {
-        flex-direction: column;
-        align-items: center;
-        max-width: 90%;
-    }
-
-    .carousel-btn {
-        display: block;
-    }
-
-    .service-card {
-        width: 100%;
-    }
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .navbar {
-        padding: 10px 20px;
-    }
-
-    .nav-items ul {
-        display: none; /* Hide regular menu */
-        flex-direction: column;
-        width: 100%;
-        background: #002B5B;
-        position: absolute;
-        top: 65px;
-        left: 0;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .nav-items ul.active {
-        display: flex;
-    }
-
-    .nav-items li {
-        padding: 10px 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .hero img {
-        width: 200px;
-        height: 200px;
-    }
-
-    .hero h1 {
-        font-size: 24px;
-    }
-
-    .hero h4 {
-        font-size: 16px;
-    }
-}
 /* Services Section */
 #serviceCarousel {
     width: 75%;
@@ -213,19 +144,6 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }
-/* Footer Section */
-.footer {
-    background-color: #002B5B;
-    color: white;
-    text-align: center;
-    padding: 10px 0; /* Minimal padding */
-}
-
-.footer-bottom p {
-    font-size: 12px;
-    opacity: 0.8;
-    margin: 0;
-}
 
 /* About Section */
 .about-section {
@@ -233,6 +151,7 @@ body {
     background-color: #111;
     color: white;
     text-align: center;
+    background-color: #021021;
 }
 
 .about-content {
@@ -281,7 +200,7 @@ body {
 /* Contact Section */
 .contact-section {
     padding: 60px 20px;
-    background-color: #222;
+    background-color: #021021;
     color: white;
     text-align: center;
 }
@@ -367,4 +286,76 @@ body {
 .contact-social a:hover {
     color: #FFC107;
 }
+/* Footer Section */
+.footer {
+    background-color: #002B5B;
+    color: white;
+    text-align: center;
+    padding: 10px 0; /* Minimal padding */
+}
 
+.footer-bottom p {
+    font-size: 12px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .nav-items ul {
+        display: none; /* Hide regular menu */
+        flex-direction: column;
+        width: 100%;
+        background: #002B5B;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-items ul.active {
+        display: flex;
+    }
+
+    .nav-items li {
+        padding: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero h4 {
+        font-size: 16px;
+    }
+}
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .services-carousel {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    .carousel-btn {
+        display: block;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+}
