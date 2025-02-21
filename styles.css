@@ -217,68 +217,14 @@ body {
 .footer {
     background-color: #002B5B;
     color: white;
-    padding: 10px 0; /* Reduced padding */
     text-align: center;
+    padding: 10px 0; /* Minimal padding */
 }
 
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px; 
-    padding: 5px 15px; /* Reduced inner padding */
-}
-.footer-logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-.footer-logo img {
-    width: 30px; /* Slightly smaller logo */
-    height: auto;
-}
-
-.footer-logo p {
-    font-size: 14px; /* Slightly smaller text */
-    margin: 0;
-}
-.footer-contact p {
-    margin: 2px 0; /* Less spacing */
-    font-size: 13px;
-}
-
-.footer-contact a {
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
-}
-
-.footer-contact a:hover {
-    color: #FFC107;
-}
-
-.footer-social {
-    display: flex;
-    gap: 10px;
-}
-
-.footer-social a {
-    color: white;
-    font-size: 16px; /* Slightly smaller icons */
-    transition: color 0.3s ease-in-out;
-}
-
-
-.footer-social a:hover {
-    color: #FFC107;
-}
-
-.footer-bottom {
-    margin-top: 5px; /* Reduced spacing */
+.footer-bottom p {
     font-size: 12px;
     opacity: 0.8;
+    margin: 0;
 }
 
 /* About Section */
@@ -312,7 +258,7 @@ body {
 .about-text h2 {
     font-size: 28px;
     margin-bottom: 10px;
-    color: #FFC107;
+    color: #f0ede4;
 }
 
 .about-text p {
@@ -321,7 +267,7 @@ body {
 }
 
 .btn-primary {
-    background-color: #FFC107;
+    background-color: #f0ede4;
     color: #111;
     padding: 10px 20px;
     text-decoration: none;
@@ -362,7 +308,7 @@ body {
 .contact-form textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #FFC107;
+    border: 1px solid #f0ede4;
     background: transparent;
     color: white;
     font-size: 16px;
@@ -375,7 +321,7 @@ body {
 }
 
 .contact-form button {
-    background-color: #FFC107;
+    background-color: #f0ede4;
     color: #111;
     padding: 10px;
     font-weight: bold;
@@ -398,7 +344,7 @@ body {
 }
 
 .contact-details a {
-    color: #FFC107;
+    color: #eeb10b;
     text-decoration: none;
 }
 
