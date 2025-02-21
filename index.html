@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fatemeh Nouriamirj</title>
     <link rel="icon" type="image/png" href="./Assets/favicon.png">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <header>
@@ -15,35 +24,216 @@
             </div>
             <div class="nav-items">
                 <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle" id="mobile-menu">
+                ☰
             </div>
         </div>
     </header>
+
     <main>
-        <section>
-            <div class="hero">
-                <div>
-                    <img src="./Assets/Screenshot 2025-02-18 at 2.58.32 AM.png" alt="">
-                    <img  src="./Assets/hero.png" alt="logo image">
-                    <h1>Beyond Banking - Crafting Financial Freedom</h1>
-                    <h4>Fatemeh Nouriamiri, Your Trusted Partner in Personalized Financial Solutions & Expert Guidance for a Secure and Prosperous Future.</h2>
-                    
+        <section class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <img src="./Assets/hero.png" alt="Fatemeh Nouriamiri">
+                <h1>Beyond Banking - Crafting Financial Freedom</h1>
+                <h4>Fatemeh Nouriamiri, Your Trusted Partner in Personalized Financial Solutions & Expert Guidance for a Secure and Prosperous Future.</h4>        
             </div>
         </section>
-        <section>
-            <div class="services"></div>
-        </section>
-        <section>
+<!-- Service section -->
+        <section id="services" class="container py-5">
+            <h2 class="text-center mb-4">Services</h2>
+            <div
+              id="serviceCarousel"
+              class="carousel slide carousel-fade container"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                  <div class="card text-white position-relative">
+                    <img
+                      src="./Assets/wealth-management.jpg"
+                      class="card-img card-img-top"
+                      alt="Lesson"
+                    />
+                    <div
+                      class="card-img-overlay d-flex flex-column justify-content-end text-center bg-dark bg-opacity-50 p-4"
+                    >
+                      <h5 class="card-title">Wealth Management</h5>
+                      <p class="card-text">
+                        Tailored investment strategies to grow and protect your wealth.
+                      </p>
+                      <button
+                        class="btn btn-light mt-2"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#details1"
+                      >
+                        More Info
+                      </button>
+                      <div id="details1" class="collapse mt-2 text-light">
+                        Our wealth management services help you build, diversify, and protect your investments. Whether you're new to investing or have an established portfolio, we provide personalized strategies to help you meet your financial goals. We assess risk tolerance, market conditions, and long-term objectives to ensure a plan that aligns with your vision.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                  <div class="card text-white position-relative">
+                    <img
+                      src="./Assets/retirement-planning.jpg"
+                      class="card-img card-img-top"
+                      alt="Group"
+                    />
+                    <div
+                      class="card-img-overlay d-flex flex-column justify-content-end text-center bg-dark bg-opacity-75 p-4"
+                    >
+                      <h5 class="card-title">
+                        Retirement Planning
+                      </h5>
+                      <p class="card-text">
+                        Plan ahead for a secure and comfortable retirement.
+                      </p>
+                      <button
+                        class="btn btn-light mt-2"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#details2"
+                      >
+                        More Info
+                      </button>
+                      <div id="details2" class="collapse mt-2 text-light">
+                        Retirement planning isn’t just about saving—it's about ensuring you have the financial stability to enjoy your later years. We help you navigate 401(k) plans, IRAs, annuities, and other savings vehicles while factoring in Social Security, healthcare costs, and lifestyle aspirations.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Third Slide -->
+                <div class="carousel-item">
+                  <div class="card text-white position-relative">
+                    <img
+                      src="./Assets/mortgage-home.jpg"
+                      class="card-img card-img-top"
+                      alt="Group"
+                    />
+                    <div
+                      class="card-img-overlay d-flex flex-column justify-content-end text-center bg-dark bg-opacity-75 p-4"
+                    >
+                      <h5 class="card-title">Mortgage & Home Financing</h5>
+                      <p class="card-text">
+                        Find the best mortgage solutions tailored to you.
+                      </p>
+                      <button
+                        class="btn btn-light mt-2"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#details2"
+                      >
+                        More Info
+                      </button>
+                      <div id="details2" class="collapse mt-2 text-light">
+                        Whether you're a first-time homebuyer or looking to refinance, we help you navigate loan options, interest rates, and repayment strategies. We work with various lenders to find the best financing options that align with your financial goals.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fourth Slide -->
+                <div class="carousel-item">
+                  <div class="card text-white position-relative">
+                    <img
+                      src="./Assets/debt-management.jpg"
+                      class="card-img card-img-top"
+                      alt="Group"
+                    />
+                    <div
+                      class="card-img-overlay d-flex flex-column justify-content-end text-center bg-dark bg-opacity-50 p-4"
+                    >
+                      <h5 class="card-title">Debt Management & Consolidation</h5>
+                      <p class="card-text">
+                        Regain control of your finances with smart debt strategies.
+                      </p>
+                      <button
+                        class="btn btn-light mt-2"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#details2"
+                      >
+                        More Info
+                      </button>
+                      <div id="details2" class="collapse mt-2 text-light">
+                        If you're struggling with high-interest debt, we provide expert strategies for consolidation, repayment plans, and interest reduction. Our goal is to help you achieve financial freedom by structuring a manageable plan tailored to your income and expenses.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fifth Slide -->
+                <div class="carousel-item">
+                  <div class="card text-white position-relative">
+                    <img
+                      src="./Assets/college-grad.jpg"
+                      class="card-img card-img-top"
+                      alt="Group"
+                    />
+                    <div
+                      class="card-img-overlay d-flex flex-column justify-content-end text-center bg-dark bg-opacity-75 p-4"
+                    >
+                      <h5 class="card-title">College Savings & Education Planning</h5>
+                      <p class="card-text">
+                        Secure your child’s future with smart education savings.
+                      </p>
+                      <button
+                        class="btn btn-light mt-2"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#details2"
+                      >
+                        More Info
+                      </button>
+                      <div id="details2" class="collapse mt-2 text-light">
+                        We help parents plan for future education expenses by exploring options like 529 college savings plans, Coverdell Education Savings Accounts (ESAs), and other tax-advantaged accounts to ensure your child’s education is financially secure.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- Carousel Controls -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#serviceCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon bg-dark rounded-circle p-3"
+                ></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#serviceCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon bg-dark rounded-circle p-3"
+                ></span>
+              </button>
+            </div>
+          </section>
+        
+        
+        <section id="about">
             <div class="about"></div>
         </section>
-        <section>
+        <section id="contact">
             <div class="contact"></div>
         </section>
     </main>
+    
     <footer></footer>
+    <script src="./script.js"></script>
 </body>
 </html>
