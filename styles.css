@@ -208,3 +208,8 @@ body {
   .contact-image {
     object-fit: cover;
   }
+  h2.text-center {
+    color: rgba(255, 255, 255, 1); /* Full white */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
