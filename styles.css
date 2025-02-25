@@ -218,11 +218,12 @@ body {
 }
 
 /* Footer Section */
+
 .footer {
-    background-color: #002B5B;
+    background: #002B5B;
     color: white;
+    padding: 40px 0;
     text-align: center;
-    padding: 10px 0;
 }
 
 .footer-bottom p {
@@ -286,7 +287,35 @@ body {
     .service-card {
         width: 100%;
     }
+    .footer {
+        padding: 10px 0;
+    }
+
+    /* Hide everything inside footer except footer-bottom */
+    .footer .footer-content {
+        display: none !important;
+    }
+
+    /* Ensure footer-bottom is visible */
+    .footer-bottom {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        font-size: 0.85rem;
+        text-align: center;
+        background: #002B5B; /* Matches Navbar */
+    }
+
+    .footer-bottom .footer-slogan {
+        display: block;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-top: 3px;
+    }
 }
+
 
 /* Mobile adjustments for 400px */
 @media (max-width: 480px) {
