@@ -18,23 +18,28 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <div class="icon">
-                <a href="#"><img src="./Assets/navbar_logo.png" alt="The banker's logo"> <span>M. Ventura</span></a>
-            </div>
-            <div class="nav-items">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#contact">Contact</a></li>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./Assets/navbar_logo.png" alt="The banker's logo" width="30" height="30" class="d-inline-block align-top">
+                M. Ventura
+            </a>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <!-- Mobile Menu Toggle -->
-            <div class="menu-toggle" id="mobile-menu">
-                ☰
-            </div>
         </div>
+    </nav>
     </header>
 
     <main>
@@ -47,7 +52,7 @@
         </section>
 <!-- Service section -->
         <section id="services" class="container py-5">
-            <h2 class="text-center mb-4 ">Services</h2>
+            <h2 class="text-center mb-4 text-light">Services</h2>
             <div
               id="serviceCarousel"
               class="carousel slide carousel-fade container"
